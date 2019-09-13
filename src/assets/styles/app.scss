@@ -1,0 +1,145 @@
+@import 'theme';
+@import './components/forms';
+
+//  Typography ------------------------
+h1 {
+  color: $primary;
+}
+
+h2 {
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: 0;
+}
+
+a {
+  color: $link-color;
+}
+
+body {
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+
+#app {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width:100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  > * {
+    flex-shrink: 1;
+    width:100%;
+  }
+}
+
+#header {
+  display:flex;
+  width:100%;
+  justify-content: center;
+  align-items: flex-start;
+
+  .title {
+    display:inline-block;
+    font-size: 30px;
+    margin-left: $gutter;
+    margin-top: -4px;
+    color: $primary;
+    font-weight: bold;
+  }
+}
+
+#content {
+  position: relative;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  width: 70%;
+  margin: 0 auto;
+  min-height: 600px;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: $gutter;
+  border-radius: 10px
+}
+
+#nav {
+  margin-top: $gutter;
+  padding: 30px;
+  background-color: #fff;
+  text-align: center;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+a {
+  color: $primary;
+}
+
+.btn, button {
+  margin: $gutter 0;
+  display:inline-block;
+  padding: 5px 10px;
+  background-color: $primary;
+  border-radius: $radius-1;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: #fff;
+    background-color: $primary-hover;
+  }
+
+  &.input-end {
+    border-radius: 0 $radius-1 $radius-1 0;
+  }
+}
+
+a.back {
+  position: absolute;
+  bottom: $gutter;
+  left: $gutter;
+  @extend .btn;
+}
+
+a.next {
+  position: absolute;
+  bottom: $gutter;
+  right: $gutter;
+  @extend .btn;
+}
+
+// databinding
+
+
+.result {
+  margin-top: 10px;
+}
+
+.result-text {
+  margin: 0 auto;
+  color:green;
+  font-size: 48px;
+  border:solid 1px #ccc;
+  padding: 10px;
+  width: 70%;
+  min-height: 15px;
+  border-radius: $radius-1;
+}
+

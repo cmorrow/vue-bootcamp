@@ -1,18 +1,19 @@
 <template>
-  <div class="home">
+  <div>
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Vue Bootcamp</h1>
+    <router-link to="/databinding" class="next">next</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import List from '@/components/List.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
+    List,
   },
 };
 </script>
