@@ -13,7 +13,8 @@
       <router-link to="/databinding">DataBinding</router-link> |
       <router-link to="/events">Events</router-link> |  
       <router-link to="/conditionals">Conditionals</router-link> |
-      <router-link to="/components">Components</router-link>
+      <router-link to="/components">Components</router-link> | 
+      <router-link to="/reactivity">Reactivity</router-link>
     </div>
     
   </div>

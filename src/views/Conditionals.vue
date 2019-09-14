@@ -16,7 +16,7 @@
     </div>
 
     <router-link to="/databinding" class="back">back</router-link>
-    <router-link to="/conditionals" class="next">next</router-link>
+    <router-link to="/components" class="next">next</router-link>
   </div>
 </template>
 

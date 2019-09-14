@@ -1,5 +1,7 @@
 # vue-bootcamp
 
+This project shows the fundamentals of working with VueJS v2 and Vue CLI.
+
 ## Project setup
 ```
 yarn install

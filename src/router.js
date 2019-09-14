@@ -39,6 +39,11 @@ export default new Router({
       name: 'componentView',
       component: () => import('./views/Components.vue'),
     },
+    {
+      path: '/reactivity',
+      name: 'reactivity',
+      component: () => import('./views/Reactivity.vue'),
+    },
     
   ],
 });
