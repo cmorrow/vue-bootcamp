@@ -44,6 +44,11 @@ export default new Router({
       name: 'reactivity',
       component: () => import('./views/Reactivity.vue'),
     },
+    {
+      path: '/emitters',
+      name: 'emitters',
+      component: () => import('./views/Emitters.vue'),
+    },
     
   ],
 });

@@ -22,7 +22,7 @@
     </div>
 
     <router-link to="/components" class="back">back</router-link>
-    <router-link to="/" class="next">home</router-link>
+    <router-link to="/emitters" class="next">next</router-link>
   </div>
 </template>
 
